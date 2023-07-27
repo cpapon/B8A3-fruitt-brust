@@ -28,7 +28,7 @@
       },
     }
   </script>
-
+  
 
   <style>
     .font-lato {
@@ -39,7 +39,7 @@
 
 <body class="font-lato max-sm:text-center">
   <header class=" lg:max-w-screen-xl mx-auto my-10 max-sm:mx-4 md:mx-5">
-    <nav class="bg-[#F85559] px-5 py-2 lg:px-10 lg:py-5 border md:rounded-full lg:rounded-full">
+    <nav class="lg:bg-[#F85559] md:bg-[#F85559] sm:bg-white max-sm:border-0   px-5 py-2 lg:px-10 lg:py-5 border md:rounded-full lg:rounded-full">
       <div class="lg:flex md:flex lg:justify-between items-center justify-evenly ">
         <!-- Left Side Menu Bar -->
         <div class="lg:flex md:flex items-center space-x-5 text-lg font-medium max-sm:grid max-sm:hidden">
@@ -55,28 +55,29 @@
           <span class="text-white font-bold text-2xl lg:text-4xl">Fruit Burst</span>
         </div>
 
-        <div class="small-device-menu flex justify-between">
+        <div class="small-device-menu flex bg-white justify-between">
           <div class="max-sm:flex max-sm:grid-cols-1 md:hidden  lg:hidden items-center space-x-2">
             <img src="./images/logo.png" alt="Logo" class="w-8 h-8 max-sm:mx-auto justify-center" />
-            <span class="text-white font-bold text-2xl lg:text-4xl">Fruit Burst</span>
+            <span class="text-black font-bold text-2xl lg:text-4xl">Fruit Burst</span>
           </div>
-          <label class="btn btn-circle swap swap-rotate lg:hidden md:hidden">
+          <label class="btn btn-circle swap swap-rotate lg:hidden md:hidden" id="">
   
-            <!-- this hidden checkbox controls the state -->
+            
             <input type="checkbox" />
             
-            <!-- hamburger icon -->
-            <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
             
-            <!-- close icon -->
-            <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+            <svg id="mobile_icon" class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
             
-          </label>
+            
+            <svg id="mobile_icon" class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+            
+          </label> 
+          
           
         </div>
-        <div class="lg:hidden md:hidden items-center space-x-5 text-lg font-medium max-sm:grid absolute">
+        <div class="lg:hidden md:hidden items-center space-x-5 text-lg font-medium max-sm:grid display_menu" id="small_menu">
             
-          <a href="#" class="text-white">Home</a>
+          <a href="#" class="text-black">Home</a>
           <a href="#" class="text-white">About Us</a>
           <a href="#" class="text-white">Shop</a>
           <a href="#" class="text-white">All Fruits</a>
@@ -202,14 +203,14 @@
       </div>
     </div>
   </section>
-  <section class="max-w-screen-xl mx-auto my-10 max-sm:mx-4 md:mx-5">
+  <section class="max-w-screen-xl mx-auto md:mt-20 my-10 lg:mt-20 mb-10 max-sm:mx-4 md:mx-5">
     <div class="max-sm:flex-wrap delay-day md:flex lg:flex justify-between items-center">
       <div class="delay-titile">
         <h2 class="text-3xl font-bold text-[#121212] md:mb-4 lg:mb-6 mb-3">
           Deal of the day
         </h2>
         <p class="text-[#12121299] max-sm:text-sm">Contrary to popular belief, is not simply random text. It has roots
-          in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+          in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
         </p>
       </div>
       <div class="delay-count">
@@ -674,6 +675,7 @@
         <!-- Add more social media icons as needed -->
       </div>
   </footer>
+  <script src="scripts.js" type="module"></script>
 </body>
 
 </html>
